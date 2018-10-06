@@ -1,0 +1,136 @@
+<!DOCTYPE html> <!它是指示 web 浏览器关于页面使用哪个 HTML 版本进行编写的指令>
+<html><!此元素可告知浏览器其自身是一个 HTML 文档。成对使用>
+	<head>
+		<meta charset="utf-8"> <!该句用途不明>
+		<title>登录</title> <!标题栏名称>
+		<style> 
+            body
+            {
+                background: #eff0f4;
+            }
+			div.title_box
+			{
+                background: #5fc0cd;
+                height: 60px;
+                margin: 0 0 10px 0;
+                padding: 0 20px 0 20px;
+                display: flex;
+                align-items: center;
+                justify-content:space-between;
+			}
+			div.phone_input_box
+			{
+                background: #fff;
+                height: 60px;
+                margin: 0 0 10px 0;                
+                padding: 0 0 0 20px;
+                display: flex;
+                align-items: center;
+			}
+			div.password_input_box
+			{
+                background: #fff;
+                height: 60px;
+                margin: 0 0 40px 0;
+                padding: 0 0 0 20px;
+                display: flex;
+                align-items: center;
+            }
+            div.login_button
+            {
+                background: #5fc0cd;
+                height: 60px;
+                margin: 0 0 10px 0;
+                display: flex;
+                align-items: center;
+                justify-content:center;
+           }
+            div.lost_password_box
+            {
+                padding: 0 20px 0 0;
+                display: flex;
+                justify-content:flex-end;
+            }
+            div.text_box_s
+            {
+                font-size: 16px;
+                color: #eff0f4;
+            }
+            div.text_box_s2
+            {
+                font-size: 16px;
+                color: #e1e5e7;
+                padding: 0 0 0 30px;
+                border-left-color: #eaedee;
+                border-left-style: solid;
+            }
+            div.text_box_s3
+            {
+                font-size: 16px;
+                color: #5fc0cd;
+                text-decoration:underline;
+            }
+            div.text_box_n
+            {
+                font-size: 20px;
+                color: #eff0f4;
+            }       
+            div.pic_box_s
+            {
+                height: 40px;
+                width: 40px;
+                margin: 0 30px 0 0;
+            }     
+            INPUT 
+            { 
+                border-left: #fff 1px solid; 
+                border-top: #fff 1px solid; 
+                border-right: #fff 1px solid; 
+                border-bottom: #fff 1px solid; 
+                margin: 10px 0px 10px 0; 
+                float: left; 
+                font-size: 1em; 
+                line-height: 1.5em; 
+                height: 20px; 
+                text-align: left; 
+                outline: 0;
+            } 
+        </style> <!定义样式信息>
+	</head>
+	<body>  
+        <!标题栏>
+		<div class="title_box">
+            <div class="text_box_s"><p>关闭</p></div>
+            <div class="text_box_n"><p>登录</p></div>
+            <div class="text_box_s"><p>注册</p></div>
+        </div>
+        <!手机号输入>
+		<div class="phone_input_box">
+            <div class="pic_box_s">
+                <img height="40" width="40" src="images/phone.png">
+            </div>
+            <div class="text_box_s2">
+                <input type="text" placeholder="请输入手机号" maxlength="11" class="INPUT">
+            </div>
+        </div>    
+        <!密码输入>
+		<div class="password_input_box">
+            <div class="pic_box_s">
+                <img height="40" width="40" src="images/password.png">
+            </div>
+            <div class="text_box_s2">
+                <input type="password" placeholder="请输入密码" maxlength="11" class="INPUT">
+            </div>
+        </div>
+        <!登录按钮>
+		<div class="login_button">
+            <div class="text_box_n"><p>登录</p></div>
+        </div>
+        <!忘记密码>
+		<div class="lost_password_box">
+            <div class="text_box_s3">
+                <p style="margin: 0 0 0 0;">忘记密码</p>
+            </div>
+        </div>
+    </body>
+</html>
