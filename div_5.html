@@ -1,0 +1,177 @@
+<!DOCTYPE html> <!--它是指示 web 浏览器关于页面使用哪个 HTML 版本进行编写的指令-->
+<html> <!--此元素可告知浏览器其自身是一个 HTML 文档。成对使用-->
+	<head>
+        <meta charset="utf-8"> <!--该句用途不明-->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+		<title>个人主页</title>
+		<style> 
+        /*使用时注意清格式!*/
+            body 
+            {
+                min-width: 340px;
+                margin: 0 0 0 0;
+                padding: 0 0 0 0;
+                border: 0 0 0 0;
+                background: #f3f3f3;
+                font-family:"Microsoft YaHei",微软雅黑,sans-serif;
+            }
+			.head
+			{
+                min-width: 340px;
+                background: #5fc0cd;
+                width: 100%; height: 40px;
+                margin: 0 0 0 0;
+                position: fixed;
+                top: 0;
+			}
+			.main
+			{
+                min-width: 340px;
+                margin: 40px 0 0 0;
+                width: 100%;
+			}
+            .footer
+            {
+                min-width: 340px;
+                height: 60px;
+                width: 100%;
+                margin: 0 0 0 0;
+                position: fixed;
+                bottom: 0;
+            }
+            .flex-line
+            {
+                display: flex;
+                align-items: center;
+            }
+            .mar0
+            {
+                margin: 0 0 0 0;
+            }
+            .pic-cover
+            {
+                background-size: cover;
+                background-repeat: no-repeat;
+            }
+            .b-line
+            {
+                border-bottom: #d8d8d8 1px solid;
+            }
+            .border
+            {
+                border-left: #5fc0cd 2px solid; 
+                border-top: #5fc0cd 2px solid; 
+                border-right: #5fc0cd 2px solid; 
+                border-bottom: #5fc0cd 2px solid; 
+                border-radius: 4px;
+            }
+        </style> <!--定义样式信息-->
+	</head>
+	<body>  
+        <!--固顶标题栏-->
+		<div class="head flex-line">
+            <div class="flex-line" style="width: 25%; justify-content: flex-start;">
+                <p class="mar0" style="padding: 0 0 0 16px; color: #fff; "> < </p>
+            </div>
+            <div class="flex-line" style="width: 50%; justify-content: center;">
+                <p class="mar0" style="color: #fff; ">个人主页</p>
+            </div>
+            <div class="flex-line" style="width: 25%; justify-content: flex-end;">
+            </div>
+        </div>
+        <!--主体-->
+		<div class="main">
+            <!--带图片块-->
+            <div class="mar0 flex-line pic-cover" 
+                style="height: 180px; background-image: url(images/background.png);">
+                <!--圆形头像-->
+                <img height="100" width="100" 
+                    src="images/man.jpg" 
+                    style="position:absolute; left:15px; border-radius: 50%; ">
+                <!--姓名地址-->
+                <div class="mar0" style="position:absolute; left:130px;">
+                    <div class="mar0 flex-line" style="padding: 5px 0 5px 0;">
+                        <p class="mar0" style="font-size: 20px; color: #fff; ">高素雅</p>
+                        <p class="mar0" style="padding: 0 0 0 24px; font-size: 16px; color: #fff; ">51岁</p>
+                    </div>
+                    <div class="mar0 flex-line" style="padding: 5px 0 5px 0;">
+                        <img height="20px" width="20px" src="images/adress.png">
+                        <p class="mar0" style="padding: 0 0 0 10px; font-size: 14px; color: #fff; ">北京·通州·果园</p>
+                    </div>
+                </div>
+            </div>
+            <!--专业技能-->
+            <div class="mar0 flex-line b-line" 
+                style="width: 100%; height: 50px; padding: 0 0 0 16px;">
+                <div class="mar0" style="border-left: #5fc0cd 2px solid; ">
+                    <p class="mar0" style="padding: 0 0 0 10px; font-size: 16px; ">专业技能</p>
+                </div>
+            </div>
+            <!--住家-->
+            <div class="mar0 flex-line" 
+                style="width: 100%; height: 50px; ">
+                <div class="mar0" style="height: 100%; width: 32px; "></div>
+                <div class="mar0 flex-line b-line" style=" height: 100%; width: 100%;">
+                    <img height="20px" width="20px" src="images/five.png">
+                    <p class="mar0" style="font-size: 16px; ">住家</p>
+                    <div class="mar0" style=" height: 14px; width: 16px; border-right: #bdbdbd 2px solid;"></div>
+                    <div class="mar0" style=" height: 14px; width: 8px;"></div>
+                    <img height="20px" width="20px" src="images/five.png">
+                    <p class="mar0" style="font-size: 16px; ">不含餐</p>
+                </div>
+            </div> 
+            <!--从业年限-->
+            <div class="mar0 flex-line" 
+                style="width: 100%; height: 50px; ">
+                <div class="mar0" style="height: 100%; width: 32px; "></div>
+                <div class="mar0 flex-line b-line" style=" height: 100%; width: 100%;">
+                    <p class="mar0" style="font-size: 16px; color: #bdbdbd;">从业年限</p>
+                    <div class="mar0" style=" height: 14px; width: 16px; border-right: #bdbdbd 2px solid;"></div>
+                    <div class="mar0" style=" height: 14px; width: 8px;"></div>
+                    <p class="mar0" style="font-size: 16px; ">0~3年</p>
+                </div>
+            </div> 
+            <!--工作时间-->
+            <div class="mar0 flex-line" style="width: 100%; height: 50px; ">
+                <div class="mar0" style="height: 100%; width: 32px; "></div>
+                <div class="mar0 flex-line b-line" style=" height: 100%; width: 100%;">
+                    <p class="mar0" style="font-size: 16px; color: #bdbdbd;">工作时间</p>
+                    <div class="mar0" style=" height: 14px; width: 16px; border-right: #bdbdbd 2px solid;"></div>
+                    <div class="mar0" style=" height: 14px; width: 8px;"></div>
+                    <p class="mar0" style="font-size: 16px; ">全天</p>
+                </div>
+            </div>
+            <div class="mar0 flex-line" style="width: 100%; height: 50px; ">
+                <div class="mar0" style="height: 100%; width: 32px; "></div>
+                <div class="mar0 flex-line b-line" style=" height: 100%; width: 100%;">
+                    <p class="mar0" style="font-size: 16px; color: #bdbdbd;">服务价格</p>
+                    <div class="mar0" style=" height: 14px; width: 16px; border-right: #bdbdbd 2px solid;"></div>
+                    <div class="mar0" style=" height: 14px; width: 8px;"></div>
+                    <p class="mar0" style="font-size: 16px; color: red">25元/小时</p>
+                </div>
+            </div>
+            <div class="mar0 flex-line" style="width: 100%; height: 50px; ">
+                <div class="mar0" style="height: 100%; width: 32px; "></div>
+                <div class="mar0 flex-line b-line" style=" height: 100%; width: 100%;">
+                    <p class="mar0" style="font-size: 16px; color: #bdbdbd; width: 64px; ">自我介绍</p>
+                    <div class="mar0" style=" height: 14px; width: 16px; border-right: #bdbdbd 2px solid;"></div>
+                    <div class="mar0" style=" height: 14px; width: 8px;"></div>
+                    <p class="mar0" style="font-size: 14px; width: 70%; ">可以洗衣、做饭、照顾老人。在护工方面有5年的经验，经验丰富。</p>
+                </div>
+            </div>
+        </div>    
+        <!--贴底底部栏-->
+		<div class="footer flex-line">
+            <div class="mar0 flex-line" style="height: 100%; width: 50%; justify-content: center; ">
+                <div class="mar0 border flex-line" style="height: 40px; width: 150px; justify-content: center;">
+                    <p class="mar0" style="color: #5fc0cd; ">留言</p>
+                </div>
+            </div>
+            <div class="mar0 flex-line" style="height: 100%; width: 50%; justify-content: center; ">
+                <div class="mar0 border flex-line" style="height: 40px; width: 150px; background-color: #5fc0cd; justify-content: center; ">
+                    <p class="mar0" style="color: #fff; ">电话联系</p>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
